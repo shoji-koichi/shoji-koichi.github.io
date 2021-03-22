@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Della+Respira&family=Poppins&family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Della+Respira&family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="pc-nav">
+      <ul class="main-nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#access">ACCESS</a></li>
+      </ul>
+    </nav>
+    <i class="fas fa-bars openbtn"></i>
+    <nav class="mobile-nav">
+      <i class="fas fa-times closebtn"></i>
+      <ul class="main-nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#access">ACCESS</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p class="header-title">
+        "Homemade roasted coffee"
+      </p>
+      <h1 class="header-name">
+        Sample Cafe
+      </h1>
+      <p class="header-link">
+        <a href="https://twitter.com/"><i class="fab fa-twitter sns-size"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram sns-size"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook sns-size"></i></a>
+      </p>
+    </div>
+    <div class="header-pattern"></div>
+    <video class="pc_video" src="images/pc_top-movie .mov" playsinline autoplay loop muted></video>
+    <video class="mobile_video" src="images/mobile_top-movie.mp4" playsinline autoplay loop muted></video>
+  </header>
+
+  <section id="about">
+    <h2>About us</h2>
+    <div class="about-contents wrapper">
+      <img src="images/about-img.jpg" alt="coffee-beans">
+      <div class="about-text">
+        <h3>"本当に美味しいコーヒー”をお届けしたい！</h3>
+        <p>当店は自家製にこだわり自家栽培から自家焙煎を行い厳選されたコーヒー豆のみを抽出した、他では味わえないハイクオリティなコーヒーを提供します。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <main class="grid">
+      <a class="grid-gallery" href="images/img1.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img1-400.jpg" srcset="images/img1-400.jpg 400w,images/img1-800.jpg 800w" alt="Coffee">
+        <p class="grid-text">Coffee</p>
+      </a>
+      <a class="grid-gallery" href="images/img2.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img2-400.jpg" srcset="images/img2-400.jpg 400w,images/img2-800.jpg 800w" alt="Cafe latte">
+        <p class="grid-text">Cafe latte</p>
+      </a>
+      <a class="grid-gallery" href="images/img3.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img3-400.jpg" srcset="images/img3-400.jpg 400w,images/img3-800.jpg 800w" alt="Cafe latte">
+        <p class="grid-text">Cafe latte</p>
+      </a>
+      <a class="grid-big-top grid-gallery" href="images/img4.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img4-400.jpg" srcset="images/img4-400.jpg 400w,images/img4-800.jpg 800w" alt="Fruit tart">
+        <p class="grid-text">Fruit tart</p>
+      </a>
+      <a class="grid-gallery" href="images/img5.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img5-400.jpg" srcset="images/img5-400.jpg 400w,images/img5-800.jpg 800w" alt="Cafe latte">
+        <p class="grid-text">Cafe latte</p>
+      </a>
+      <a class="grid-gallery" href="images/img6.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img6-400.jpg" srcset="images/img6-400.jpg 400w,images/img6-800.jpg 800w" alt="Morning set">
+        <p class="grid-text">Morning set</p>
+      </a>
+      <a class="grid-big-top2 grid-gallery" href="images/img7.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img7-400.jpg" srcset="images/img7-400.jpg 400w,images/img7-800.jpg 800w" alt="Fruit tart">
+        <p class="grid-text">Fruit tart</p>
+      </a>
+      <a class="grid-gallery" href="images/img8.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img8-400.jpg" srcset="images/img8-400.jpg 400w,images/img8-800.jpg 800w" alt="Morning set">
+        <p class="grid-text">Morning set</p>
+      </a>
+      <a class="grid-gallery" href="images/img9.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img9-400.jpg" srcset="images/img9-400.jpg 400w,images/img9-800.jpg 800w" alt="Pasta">
+        <p class="grid-text">Pasta</p>
+      </a>
+      <a class="grid-gallery" href="images/img10.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img10-400.jpg" srcset="images/img10-400.jpg 400w,images/img10-800.jpg 800w" alt="Pasta">
+        <p class="grid-text">Pasta</p>
+      </a>
+      <a class="grid-gallery" href="images/img11.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img11-400.jpg" srcset="images/img11-400.jpg 400w,images/img11-800.jpg 800w" alt="Pasta">
+        <p class="grid-text">Pasta</p>
+      </a>
+      <a class="grid-gallery" href="images/img12.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img12-400.jpg" srcset="images/img12-400.jpg 400w,images/img12-800.jpg 800w" alt="Donuts">
+        <p class="grid-text">Donuts</p>
+      </a>
+      <a class="grid-gallery" href="images/img13.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img13-400.jpg" srcset="images/img13-400.jpg 400w,images/img13-800.jpg 800w" alt="Donuts">
+        <p class="grid-text">Donuts</p>
+      </a>
+      <a class="grid-big-bottom grid-gallery" href="images/img14.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img14-400.jpg" srcset="images/img14-400.jpg 400w,images/img14-800.jpg 800w" alt="Donuts set">
+        <p class="grid-text">Donuts set</p>
+      </a>
+      <a class="grid-gallery" href="images/img15.jpg" data-aos="zoom-in">
+        <img class="grid-item" src="images/img15-400.jpg" srcset="images/img15-400.jpg 400w,images/img15-800.jpg 800w" alt="Donuts">
+        <p class="grid-text">Donuts</p>
+      </a>
+    </main>
+  </section>
+
+  <section id="access">
+    <h2>Access</h2>
+    <div class="access-contents wrapper">
+      <div class="access-info">
+        <h3>Sample Cafe</h3>
+        <p>
+          住所：宮城県仙台市XX区XX町X丁目XX-XX<br>
+          電話：022-xxx-xxxx<br>
+          営業時間： 10:00 ~ 20:00<br>
+          定休日：水曜
+        </p>
+      </div>
+
+      <div class="access-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400706.3800977605!2d140.48596957983236!3d38.31382007079266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a2aee30cd55d3%3A0xba2579e0b846b1ee!2z5a6u5Z-O55yM5LuZ5Y-w5biC!5e0!3m2!1sja!2sjp!4v1616381289009!5m2!1sja!2sjp" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-link">
+      <a href="https://twitter.com/"><i class="fab fa-twitter sns-size"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram sns-size"></i></a>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook sns-size"></i></a>
+    </p>
+    <p class="copyright"><small>&copy; 2021 Sample Cafe</small></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

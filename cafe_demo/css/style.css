@@ -1,0 +1,363 @@
+@charset 'UTF-8';
+
+:root {
+  --gray: #333;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #321f28;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+header {
+  position: relative;
+  margin-bottom: .5rem;
+}
+.pc-nav {
+  display: none;
+}
+.mobile-nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 35vh;
+  background: #333;
+  transition: all .6s;
+}
+.mobile-nav.panelactive {
+  left: 0;
+}
+.openbtn,
+.closebtn {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  cursor: pointer;
+}
+.openbtn.active {
+  display: none;
+}
+.main-nav li {
+  text-align: center;
+  margin: 2rem 0;
+  transition: .4s;
+}
+.main-nav li:hover {
+  color: #e79e4f;
+}
+.main-nav li a {
+  font-family: 'Spartan', sans-serif;
+  display: block;
+}
+.header-text {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+}
+.header-title {
+  font-size: 1.35rem;
+  margin-bottom: 0.7rem;
+}
+.header-name {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.header-pattern {
+  position: absolute;
+  z-index: 1;
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, var(--gray) 2px, var(--gray) 4px );
+}
+header video {
+  object-fit: cover;
+  object-position: center top;
+  opacity: .8;
+  filter: sepia(60%);
+}
+.pc_video {
+  display: none;
+}
+.header-text,
+.header-pattern,
+header video {
+  width: 100vw;
+  height: 100vh;
+}
+.header-link a + a {
+  margin-left: 1rem;
+}
+.sns-size {
+  font-size: 1.5rem;
+}
+h2 {
+  font-family: 'Spartan', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 4rem 0 1rem;
+}
+h2::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #e79e4f;
+  display: inline-block;
+  margin-right: 8px;
+}
+.wrapper {
+  width: 94vw;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+/*
+About
+================================================= */
+.about-contents img {
+  width: 94vw;
+}
+.about-text {
+  margin-top: 1rem;
+  letter-spacing: 0.05rem;
+}
+.about-text h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.75rem;
+}
+.about-text p {
+  line-height: 1.5rem;
+}
+
+/*
+GRID
+================================================ */
+#menu {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.grid {
+  width: 94vw;
+  margin: 0 auto 3vw;
+  display: grid;
+  gap: 8vw 2vw;
+  grid-template-columns: repeat(2, 46vw); /* (94 - 2) / 2 */
+  grid-template-rows: repeat(9, 30vw);
+}
+.grid-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.grid-big-top {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.grid-big-top2 {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+.grid-big-bottom {
+  grid-column: 1/3;
+  grid-row: 8/9;
+}
+.grid-text {
+  background: #a05344;
+  text-align: center;
+  padding: 0.125rem;
+}
+
+/*
+Access
+================================================ */
+#access {
+  margin-top: 5.3rem;
+  margin-bottom: 3rem;
+}
+.access-info {
+  border-left: 2px solid #e79e4f;
+  padding-left: 15px;
+  margin-bottom: 1.5rem;
+}
+.access-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.75rem;
+}
+.access-info p {
+  line-height: 1.5rem;
+}
+.access-map iframe {
+  width: 100%;
+}
+
+/*
+FOOTER
+================================================ */
+footer {
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  background: #734046;
+}
+.footer-link {
+  margin-bottom: .5rem;
+}
+.sns-size {
+  font-size: 1.3rem;
+}
+.footer-link a + a {
+  margin-left: 1rem;
+}
+/*
+DESKTOP SIZE
+================================================ */
+@media (min-width: 600px) {
+  /* Header */
+  .pc-nav {
+    display: unset;
+    position: fixed;
+    width: 55%;
+    height: 60px;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .fa-bars,
+  .fa-times {
+    display: none;
+  }
+  .main-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: rgba(51, 51, 51, .5);
+  }
+  .pc_video {
+    display: unset;
+  }
+  .mobile_video {
+    display: none;
+  }
+  .header-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .header-name {
+    font-size: 4.7rem;
+  }
+  .sns-size {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin: 8rem 0 3rem;
+  }
+  h2::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #e79e4f;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .about-contents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about-contents img {
+    width: 40%;
+  }
+  .about-text {
+    width: 47%;
+  }
+  .about-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .about-text p {
+    line-height: 1.8rem;
+  }
+
+  /* Grid */
+  .grid {
+    width: 80vw;
+    gap: 5vw 2vw;
+    grid-template-columns: repeat(3, 26vw); /* (80 - 2) / 3 */
+    grid-template-rows: repeat(5, 26vw);
+  }
+  .grid-big-top2 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+  .grid-big-bottom {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+  .grid-item {
+    transition: .3s;
+  }
+  .grid-item:hover {
+    filter: grayscale(0);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+    z-index: 3;
+    position: relative;
+  }
+  .grid-text {
+    background: #a05344;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.175rem;
+  }
+
+  /* Access */
+  #access {
+    margin-top: 9.3rem;
+    margin-bottom: 5rem;
+  }
+  .access-contents {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .access-info {
+    width: 45%;
+  }
+  .access-map {
+    width: 45%;
+  }
+  .access-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.75rem;
+  }
+  .access-info p {
+    line-height: 2rem;
+  }
+  .access-info {
+    padding-left: 15px;
+    margin-bottom: 7.2rem;
+  }
+}
